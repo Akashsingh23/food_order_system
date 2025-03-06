@@ -1,0 +1,263 @@
+/* 
+    Author: AKASH THAKUR;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    color: #27ae60;
+    font-size: 1rem;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.error{
+    padding: 2%;
+    color: #ff4757;
+}
+
+.success{
+    padding: 2%;
+    color: green;
+}
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/bg4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+    height: 100%;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.homepage-heading {
+    font-family: 'Playfair Display', serif; /* Elegant & modern font */
+    font-size: 1.8rem; /* Balanced font size */
+    font-weight: bold; /* Strong emphasis */
+    color: rgb(31, 117, 209); /* Cool & inviting blue */
+  
+    text-transform: capitalize; /* Makes it look clean */
+    text-shadow: 2px 2px 4px rgba(81, 88, 91, 0.298); /* Subtle shadow */
+}
+
+/* Style for the dots */
+.dots {
+    display: inline-block;
+    width: 20px; /* Fixed width to prevent text shifting */
+    text-align: left;
+}
+
+
+/* Dots Animation */
+@keyframes dots-animation {
+    0% { content: ""; }
+    33% { content: "."; }
+    66% { content: ".."; }
+    100% { content: "..."; }
+}
+
+
+
+
+/* CSS for Categories */
+.categories {
+    padding: 4% 0;
+}
+
+.box-3 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background: #333; /* Dark background for contrast */
+}
+
+.box-3:hover {
+    transform: scale(1.05);
+}
+
+.box-3 img {
+    width: 100%;
+    height: 250px; /* Consistent height for images */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-3:hover img {
+    transform: scale(1.1);
+}
+
+.float-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(79, 79, 79, 0.4);
+    border-radius: 10px;
+}
+
+/* ✅ Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .box-3 img {
+        height: 200px; /* Smaller height on mobile */
+    }
+
+    .float-text {
+        font-size: 20px;
+    }
+}
+
+/* CSS for Food Menu */
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+   
+    .order{
+        width: 100%;
+    }
+}
+
+
+
